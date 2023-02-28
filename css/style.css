@@ -20,8 +20,8 @@
   font-weight: 800;
   src: url(../fonts/OpenSans-Bold.ttf);
 }
+/***ХЭДЕР***/
 .header {
-	min-width: 320px;
 	max-width: 640px;
 	background-image: url(../images/banner-mobile.jpg);
 	background-repeat: no-repeat;
@@ -30,6 +30,7 @@
   position: relative;
   display: block;
   padding-bottom: 220px;
+  margin: 0 auto;
 }
 .header::before {
   content: "";
@@ -45,6 +46,9 @@
 .menu {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
+  padding-right: 15px;
+  padding-top: 30px;
 }
 .menu__list {
   display: flex;
@@ -52,8 +56,9 @@
   font-size: 13px;
   position: relative;
   z-index: 2;
+  visibility: hidden;
 }
-.menu__item {
+/*.menu__item {
   list-style-type: none;
   margin-right: 35px;
   cursor: pointer;
@@ -65,32 +70,31 @@
 }
 .menu__link:hover {
   text-decoration: underline;
+}*/
+.burger__menu {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .burger__image {
   display: block;
-  position: relative;
-  box-sizing: border-box;
   width: 25px;
-  height: 2px;
+  height: 3px;
   background-color: white;
 }
 .burger__image:nth-child(2n) {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-.checkbox {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .logo {
   width: 280px;
+  display: block;
   position: relative;
   z-index: 2;
-  display: block;
-  padding-top: 220px;
-  margin: 0 auto;
+  margin-top: 220px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title {
   position: relative;
@@ -105,4 +109,79 @@
   text-transform: uppercase;
   font-size: 26px;
   text-align: center;
+}
+
+/***КОНТЕНТ***/
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.trend {
+  max-width: 640px;
+  margin-top: 45px;
+}
+.trend__title {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+} 
+.trend__title__link {
+  font-family: "Open Sans Bold";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+.trend__title::after {
+  content: "";
+  height: 3px;
+  width: 60px;
+  background-color: #e1d9bd;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.trend__post {
+  max-width: 640px;
+  height: 230px;
+  background-image: url(../images/trend1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+.trend__post__info {
+  outline: 3px solid #e1d9bd;
+}
+.trend__tags {
+  list-style-type: none;
+  display: flex;
+}
+.trend__tag {
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+.trend__tag:last-child {
+  margin-right: 0;
+}
+.tag {
+  text-decoration: none;
+  font-family: "Open Sans Bold";
+  text-transform: uppercase;
+  color: #b59f5b;
+  font-size: 14px;
+}
+.tag:hover {
+  text-decoration: underline;
+}
+.trend__link {
+  font-family: "Open Sans Bold";
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+.trend__link:hover {
+  color: #b59f5b;
 }
