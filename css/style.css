@@ -1,3 +1,108 @@
-h1 {
-color: red;
+/*Мобильная версия, до 640px
+сейчас в тренде, портрет - 1, пейзаж - 2*/
+/*Планшет, от 641 до 1200px
+сейчас в тренде, портрет - 2, пейзаж - 4*/
+/*Десктоп, от 1201px*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+.header {
+	min-width: 320px;
+	max-width: 640px;
+	background-image: url(../images/banner-mobile.jpg);
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: block;
+  padding-bottom: 220px;
+}
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu__list {
+  display: flex;
+  font-family: "Open Sans";
+  font-size: 13px;
+  position: relative;
+  z-index: 2;
+}
+.menu__item {
+  list-style-type: none;
+  margin-right: 35px;
+  cursor: pointer;
+}
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+.burger__image {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 25px;
+  height: 2px;
+  background-color: white;
+}
+.burger__image:nth-child(2n) {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.checkbox {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+.logo {
+  width: 280px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding-top: 220px;
+  margin: 0 auto;
+}
+.title {
+  position: relative;
+  z-index: 2;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 43px;
+}
+.title__text {
+  color: #ffffff;
+  font-family: "Open Sans Bold";
+  text-transform: uppercase;
+  font-size: 26px;
+  text-align: center;
 }
