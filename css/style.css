@@ -305,9 +305,11 @@ background-image: url(../images/trend1.jpg);
   display: flex;
   margin-top: 45px;
   margin-bottom: 55px;
-  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  max-width: 640px;
 }
 .search__ {
   width: 100%;
@@ -357,6 +359,9 @@ background-image: url(../images/trend1.jpg);
   margin-top: 45px;
   padding-right: 15px;
   padding-left: 15px;
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .mailing__list {
   display: flex;
