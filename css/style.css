@@ -111,12 +111,12 @@
   text-align: center;
 }
 
-/***КОНТЕНТ***/
-main {
+/***ТРЕНДЫ***/
+section {
   max-width: 640px;
   margin: 0 auto;
 }
-.trend {
+.trends {
   max-width: 640px;
   margin-top: 45px;
 }
@@ -144,15 +144,49 @@ main {
 }
 .trend__post {
   max-width: 640px;
-  height: 230px;
-  background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: lightgray;
   display: block;
+  padding: 90px 15px 15px 15px;
+  margin-bottom: 3px;
+  position: relative;
+}
+.trend__post:last-child {
+  margin-bottom: 0;
+}
+.trend__post:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+.trend__1 {
+background-image: url(../images/trend1.jpg);
+}
+.trend__2 {
+  background-image: url(../images/trend2.jpg);
+}
+.trend__3 {
+  background-image: url(../images/trend3.jpg);
+}
+.trend__4 {
+  background-image: url(../images/trend4.jpg);
 }
 .trend__post__info {
   outline: 3px solid #e1d9bd;
+  max-width: 640px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  position: relative;
+  z-index: 2;
 }
 .trend__tags {
   list-style-type: none;
@@ -184,4 +218,369 @@ main {
 }
 .trend__link:hover {
   color: #b59f5b;
+}
+
+/***ПОСТЫ***/
+
+.post {
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 640px;
+  margin-top: 45px;
+}
+.post__pic {
+  margin-bottom: 15px;
+}
+.post__link {
+  font-family: "Open Sans Bold";
+  text-transform: uppercase;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.post__link:hover {
+  color: #b59f5b;
+}
+.post__data__author {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.post__data {
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: #888888;
+  margin-right: 15px;
+}
+.post__author {
+  font-family: "Open Sans Bold";
+  font-size: 12px;
+}
+.post__text {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+.post:not(:last-child):after  {
+  content: "";
+  height: 3px;
+  max-width: 640px;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+}
+
+/***НОВЫЕ ПОСТЫ***/
+
+.new__posts {
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 640px;
+  margin-top: 45px;
+}
+.new__post {
+  display: flex;
+  margin-bottom: 25px;
+}
+.new__post__info {
+  margin-left: 20px;
+}
+.new__post__link {
+  font-family: "Open Sans Bold";
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.new__post__link:hover {
+  color: #b59f5b;
+}
+
+/***ПОИСК***/
+.search {
+  display: flex;
+  margin-top: 45px;
+  margin-bottom: 55px;
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.search__ {
+  width: 100%;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.search__field {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #f4f7f6;
+  padding-left: 20px;
+}
+::placeholder {
+  font-size: 13px;
+  color: #a2a4a3;
+}
+.search__field:focus,
+.search__button {
+  outline: 1px solid #b59f5b;
+}
+.search__button {
+  width: 50px;
+  height: 49px;
+  background-color: #b59f5b;
+  background-image: url(../svg/search.svg);
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.search__button:hover {
+  background-color: #323232;
+  cursor: pointer;
+}
+
+/***РАССЫЛКА***/
+.mailing {
+  margin-top: 45px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.mailing__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.field {
+  width: 100%;
+}
+.mailing__field {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #f4f7f6;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.mailing__field:focus {
+  outline: 1px solid #b59f5b;
+}
+.mailing__button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #b59f5b;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Open Sans Bold;
+}
+.mailing__button:hover {
+  background-color: #323232;
+  cursor: pointer;
+}
+
+/***ТЕГИ***/
+.aside__tags {
+  margin-top: 45px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.tags__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tag__list {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-family: "Open Sans Bold";
+  height: 30px;
+  border: 3px solid #eeeeee;
+  padding: 5px 10px 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.tags__list:last-child {
+  margin-right: 0;
+}
+.tag:hover {
+  border: 3px solid #b59f5b;
+}
+
+/***ТЕМЫ***/
+.aside__theme {
+  margin-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.theme__list {
+  list-style-type: none;
+}
+.theme {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+.theme__link {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-family: "Open Sans Bold";
+  margin-right: 5px;
+}
+.theme__link:hover {
+  color: #b59f5b;
+}
+.count {
+  color: #b59f5b;
+  font-size: 12px;
+  font-family: "Open Sans Bold";
+  vertical-align: super;
+}
+
+
+/***НАШИ ИЗДЕЛИЯ***/
+.products {
+  max-width: 640px;
+  margin-top: 45px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.product {
+  margin: 0 auto;
+}
+.product__img {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.product__card {
+  border: 3px solid #b59f5b;
+  padding: 55px 25px 25px 20px;
+  position: relative;
+  top: -40px;
+}
+.product__title {
+  font-family: "Open Sans Bold";
+  font-size: 17px;
+  text-transform: uppercase;
+  color: black;
+}
+.product__text {
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: black;
+}
+.product__text__link {
+  color: #b59f5b;
+  text-decoration: none;
+}
+.product__text__link:hover {
+  text-decoration: underline;
+}
+.product__buy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.price__old {
+  font-family: "Open Sans Bold";
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.price__new {
+  font-family: "Open Sans Bold";
+  font-size: 20px;
+}
+.buy__button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  background-color: #b59f5b;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Open Sans Bold;
+}
+.buy__button:hover {
+  background-color: #323232;
+  cursor: pointer;
+}
+
+
+
+/***ФУТЕР***/
+.footer {
+  font-family: Open Sans;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 640px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer__icons {
+  width: 100%;
+  background-color: #f4f7f6;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.icon {
+  margin-left: 18px;
+}
+.icon:first-child {
+  margin-left: 0;
+}
+.icons {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.dribbble {
+  background-image: url(../svg/001-dribbble.svg);
+  background-repeat: no-repeat;
+}
+.pinterest {
+  background-image: url(../svg//002-pinterest.svg);
+  background-repeat: no-repeat;
+}
+.tumblr {
+  background-image: url(../svg//003-tumblr.svg);
+  background-repeat: no-repeat;
+}
+.copyright {
+  font-size: 12px;
+  font-family: "Open Sans Bold";
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: #999999;
 }
