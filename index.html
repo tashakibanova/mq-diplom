@@ -4,42 +4,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MQ Diplom</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 640px)" href="css/style.css">
+	<link rel="stylesheet" media="screen and (min-width: 641px)" href="css/tablet.css">
+	<link rel="stylesheet" media="screen and (min-width: 1201px)" href="css/desktop.css">
 </head>
 <body>
 <header class="header">
-	<nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Посты</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Статьи</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Теги</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Темы</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Контакты</a>
-          </li>
-        </ul>
-        <div class="burger">
+	<div class="header__menu">
+		<a href="#0"><img src="svg/noemi-logo.svg" class="logo" alt="Логотип noemi"></a>
+		<nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Посты</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Статьи</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Теги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Темы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+          <div class="burger">
         	<button class="burger__menu">
         		<span class="burger__image"></span>
         		<span class="burger__image"></span>
         		<span class="burger__image"></span>
         	</button>
-        </div>   
-    </nav>
-    <a href="#0">
-        <img src="svg/noemi-logo.svg" class="logo" alt="Логотип noemi">
-    </a>
+          </div>   
+        </nav>
+    </div>
+	
 	<div class="title">
 		<h1 class="title__text">Блог о творчестве, спорте, и образе жизни</h1>
 	</div>
@@ -102,6 +105,7 @@
 	  </div>
 </section>
 	
+<div class="page">
 <main>
  <section class="post">
       <img src="images/last-post1.jpg" class="post__pic" alt="10 мест" width="100%">
@@ -211,8 +215,6 @@
     </section>
 </main>
 
-
-
 <aside>
 	<section class="new__posts">
 		<h2 class="trend__title"><a href="#0" class="trend__title__link">Новые посты</a></h2>
@@ -299,6 +301,7 @@
       </ul>
     </div>
 </aside>
+</div>
 
 <section class="products">
 	<h2 class="trend__title"><a href="#0" class="trend__title__link">Наши изделия</a></h2>
@@ -353,5 +356,47 @@
   </ul>
   <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
 </footer>
+
+<div class="pop-up__container">
+	<div class="pop-up">
+		<form class="form">
+			<h2 class="trend__title"><a href="#0" class="trend__title__link">Ваш фидбек</a></h2>
+          <label class="select-group">
+              <span class="select-label">Как часто вы заходите на сайт?</span>
+                <select class="select">
+                  <option value="every-day" selected>Почти каждый день</option>
+                  <option value="days">Раз в несколько дней</option>
+                  <option value="weeks">Раз в несколько недель</option>
+                  <option value="years">Несколько раз в год</option>
+                </select>
+          </label>
+
+          <div class="select-group">
+            <span class="select-label">Вы подписаны на e-mail рассылку?</span>
+            <label class="radio-group">
+            	<input type="radio" class="radio" name="radio-group">
+            	<span class="radio-group-text">Да</span>
+            </label>
+            <label class="radio-group">
+            	<input type="radio" class="radio" name="radio-group">
+            	<span class="radio-group-text">Нет</span>
+            </label>
+          </div>
+
+           <div class="select-group">
+             <span class="select-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+             <textarea class="mailing__field field__popup" placeholder="Может, больше рецептов?"></textarea>
+           </div>
+
+           <div class="form-row">
+             <button class="button">Отправить</button>
+           </div>
+
+           <button type="button" class="close"><img src="svg/form-x.svg" alt=""></button>
+        </form>
+	</div>
+
+</div>
+
 </body>
 </html>
