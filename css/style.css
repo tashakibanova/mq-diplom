@@ -164,16 +164,15 @@ section {
 }
 @media (orientation: landscape) {
   .trend__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
   }
   .trend__post {
-    width: 49.7%;
-  }
-  .trend__post:nth-child(n+3) {
-  margin-bottom: 0;
+  display: flex;
+  align-items: flex-end;
   }
 }
 .trend__post:last-child {
@@ -534,6 +533,7 @@ background-image: url(../images/trend1.jpg);
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+  align-items: flex-end;
 }
 .price__old {
   font-family: "Open Sans Bold";
@@ -715,7 +715,7 @@ background-image: url(../images/trend1.jpg);
 }
 .radio:checked ~ .radio-group-text::before {
   background-image: url(../svg/form-circle.svg);
-}*/
+}
 
 /*контент*/
 /*.field__popup {
