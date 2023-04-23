@@ -4,18 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", "sans-serif";
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/OpenSans-Regular.ttf);
-}
-@font-face {
-  font-family: "Open Sans Bold";
-  font-style: normal;
-  font-weight: 800;
-  src: url(../fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf),
+       url(../fonts/OpenSans-Bold.ttf);
 }
 
 /***ХЭДЕР***/
@@ -47,7 +42,7 @@
   z-index: 2;
   padding-left: 30px;
   padding-right: 30px;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   align-items: center;
   margin: 0 auto;
 }
@@ -58,7 +53,7 @@
 }
 .menu__list {
   display: flex;
-  font-family: "Open Sans";
+  font-weight: 400;
   font-size: 13px;
   position: relative;
   z-index: 2;
@@ -89,7 +84,11 @@
   height: 3px;
   background-color: white;
 }
-.burger__image:nth-child(2n) {
+/*.burger__image:nth-child(2n) {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}*/
+.line {
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -111,7 +110,7 @@
 }
 .title__text {
   color: #ffffff;
-  font-family: "Open Sans Bold";
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 40px;
   text-align: center;
@@ -123,7 +122,7 @@ section {
   margin: 0 auto;
 }
 .trends {
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin-top: 45px;
 }
 .trend__title {
@@ -132,7 +131,7 @@ section {
   text-align: center;
 } 
 .trend__title__link {
-  font-family: "Open Sans Bold";
+  font-weight: 800;
   font-size: 18px;
   text-transform: uppercase;
   color: black;
@@ -218,7 +217,7 @@ background-image: url(../images/trend1.jpg);
 }
 .tag {
   text-decoration: none;
-  font-family: "Open Sans Bold";
+  font-weight: 800;
   text-transform: uppercase;
   color: #b59f5b;
   font-size: 14px;
@@ -227,7 +226,7 @@ background-image: url(../images/trend1.jpg);
   text-decoration: underline;
 }
 .trend__link {
-  font-family: "Open Sans Bold";
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 17px;
   color: white;
@@ -240,7 +239,7 @@ background-image: url(../images/trend1.jpg);
 /***ПОСТЫ***/
 
 .page {
-  font-family: Open Sans;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   max-width: 1200px;
@@ -258,7 +257,7 @@ background-image: url(../images/trend1.jpg);
   margin-bottom: 15px;
 }
 .post__link {
-  font-family: "Open Sans Bold";
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 17px;
   color: black;
@@ -274,17 +273,18 @@ background-image: url(../images/trend1.jpg);
   margin-bottom: 20px;
 }
 .post__data {
-  font-family: "Open Sans";
+  font-weight: 400;
   font-size: 12px;
   color: #888888;
   margin-right: 15px;
 }
 .post__author {
-  font-family: "Open Sans Bold";
+  font-weight: 800;
   font-size: 12px;
 }
 .post__text {
-  font-family: "Open Sans";
+  /*font-family: "Open Sans";*/
+  font-weight: 400;
   font-size: 15px;
 }
 .post:not(:last-child):after  {
@@ -314,7 +314,8 @@ background-image: url(../images/trend1.jpg);
   margin-left: 20px;
 }
 .new__post__link {
-  font-family: "Open Sans Bold";
+  /*font-family: "Open Sans Bold";*/
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 14px;
   color: black;
@@ -415,7 +416,7 @@ background-image: url(../images/trend1.jpg);
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: Open Sans Bold;
+  font-weight: 800;
 }
 .mailing__button:hover {
   background-color: #323232;
@@ -443,7 +444,8 @@ background-image: url(../images/trend1.jpg);
   text-decoration: none;
   color: black;
   font-size: 12px;
-  font-family: "Open Sans Bold";
+  /*font-family: "Open Sans Bold";*/
+  font-weight: 800;
   height: 30px;
   border: 3px solid #eeeeee;
   padding: 5px 10px 5px 10px;
@@ -479,7 +481,8 @@ background-image: url(../images/trend1.jpg);
   text-decoration: none;
   color: black;
   font-size: 14px;
-  font-family: "Open Sans Bold";
+  /*font-family: "Open Sans Bold";*/
+  font-weight: 800;
   margin-right: 5px;
 }
 .theme__link:hover {
@@ -488,7 +491,8 @@ background-image: url(../images/trend1.jpg);
 .count {
   color: #b59f5b;
   font-size: 12px;
-  font-family: "Open Sans Bold";
+  /*font-family: "Open Sans Bold";*/
+  font-weight: 800;
   vertical-align: super;
 }
 
@@ -526,14 +530,16 @@ background-image: url(../images/trend1.jpg);
 }
 
 .product__title {
-  font-family: "Open Sans Bold";
+  /*font-family: "Open Sans Bold";*/
+  font-weight: 800;
   font-size: 17px;
   text-transform: uppercase;
   color: black;
 
 }
 .product__text {
-  font-family: "Open Sans";
+  /*font-family: "Open Sans";*/
+  font-weight: 400;
   font-size: 15px;
   color: black;
   margin-bottom: 25px;
@@ -552,12 +558,14 @@ background-image: url(../images/trend1.jpg);
   align-items: flex-end;
 }
 .price__old {
-  font-family: "Open Sans Bold";
+  /*font-family: "Open Sans Bold";*/
+  font-weight: 800;
   font-size: 14px;
   text-decoration: line-through;
 }
 .price__new {
-  font-family: "Open Sans Bold";
+  /*font-family: "Open Sans Bold";*/
+  font-weight: 800;
   font-size: 20px;
 }
 .buy__button {
@@ -568,7 +576,8 @@ background-image: url(../images/trend1.jpg);
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: Open Sans Bold;
+  /*font-family: Open Sans Bold;*/
+  font-weight: 800;
 }
 .buy__button:hover {
   background-color: #323232;
@@ -579,7 +588,8 @@ background-image: url(../images/trend1.jpg);
 
 /***ФУТЕР***/
 .footer {
-  font-family: Open Sans;
+  /*font-family: Open Sans;*/
+  font-weight: 400;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -623,7 +633,7 @@ background-image: url(../images/trend1.jpg);
 }
 .copyright {
   font-size: 12px;
-  font-family: "Open Sans Bold";
+  font-weight: 800;
   padding-top: 45px;
   padding-bottom: 45px;
   color: #999999;
@@ -650,7 +660,7 @@ background-image: url(../images/trend1.jpg);
 }
 .select-label {
   font-size: 13px;
-  font-family: Open Sans;
+  font-weight: 400;
   display: block;
   margin-bottom: 10px;
   margin-top: 30px;
@@ -663,7 +673,7 @@ background-image: url(../images/trend1.jpg);
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: Open Sans Bold;
+  font-weight: 800;
 }
 .button:hover {
   background-color: #323232;
@@ -690,7 +700,7 @@ background-image: url(../images/trend1.jpg);
   border: none;
   background-color: #f4f7f6;
   font-size: 13px;
-  font-family: Open Sans;
+  font-weight: 400;
   background-image: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
   background-position: center right 10px;
@@ -703,7 +713,7 @@ background-image: url(../images/trend1.jpg);
 /*.radio-group {
   display: inline-block;
   font-size: 13px;
-  font-family: Open Sans;
+  font-weight: 400;
   cursor: pointer;
 }
 .radio-group:nth-of-type(n+2) {
@@ -737,7 +747,7 @@ background-image: url(../images/trend1.jpg);
 /*.field__popup {
   padding-top: 20px;
   font-size: 13px;
-  font-family: Open Sans;
+  font-weight: 400;
   height: 130px;
   max-width: 560px;
 }*/
