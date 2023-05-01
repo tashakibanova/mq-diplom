@@ -293,7 +293,7 @@ background-image: url(../images/trend1.jpg);
   font-weight: 400;
   font-size: 14px;
 }
-.post:not(:last-child):after  {
+.post__after:after  {
   content: "";
   height: 3px;
   max-width: 640px;
@@ -367,7 +367,9 @@ background-image: url(../images/trend1.jpg);
   font-size: 13px;
   color: #a2a4a3;
 }
-.search__field:focus,
+.search__field:focus {
+  outline: 1px solid #b59f5b;
+}
 .search__button {
   outline: 1px solid #b59f5b;
 }
